@@ -1,0 +1,32 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%BusOS%
+DriverVer=11/22/2025,16.0.0.1
+CatalogFile=BusOS_Driver.cat
+
+[Manufacturer]
+%BusOS_Mfg%=BusOS_Devices,NTamd64
+
+[BusOS_Devices.NTamd64]
+%Bus_Controller.DeviceDesc%=Bus_Controller_Device, PCI\VEN_BUS&DEV_0001
+%Bus_Hydraulics.DeviceDesc%=Bus_Hydraulics_Device, PCI\VEN_BUS&DEV_0002
+%Bus_Lidar.DeviceDesc%=Bus_Lidar_Device, USB\VID_BUS&PID_LIDR
+%Bus_WiFi_Mesh.DeviceDesc%=Bus_WiFi_Device, PCI\VEN_BUS&DEV_WIFI
+
+[Bus_Controller_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+bus_controller.sys
+bus_hydraulics.sys
+bus_lidar.sys
+
+[Strings]
+BusOS="Bus OS Transit Authority"
+BusOS_Mfg="Bus OS Hardware Ltd."
+Bus_Controller.DeviceDesc="Bus OS Main Controller Interface"
+Bus_Hydraulics.DeviceDesc="Bus OS Hydraulic Suspension Manager"
+Bus_Lidar.DeviceDesc="Bus OS Lidar Array Sensor Gen-X"
+Bus_WiFi_Mesh.DeviceDesc="Bus OS Mesh Network Adapter 6E"

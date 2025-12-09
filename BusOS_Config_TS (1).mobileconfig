@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadDescription</key>
+            <string>Configures BusOS Network Settings for Driver Terminals</string>
+            <key>PayloadDisplayName</key>
+            <string>BusOS Secure Wi-Fi</string>
+            <key>PayloadIdentifier</key>
+            <string>com.busos.wifi</string>
+            <key>PayloadType</key>
+            <string>com.apple.wifi.managed</string>
+            <key>PayloadUUID</key>
+            <string>12345678-1234-1234-1234-1234567890AB</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>SSID_STR</key>
+            <string>BusOS_Link_Secure</string>
+            <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>AutoJoin</key>
+            <true/>
+            <key>EncryptionType</key>
+            <string>WPA</string>
+            <key>Password</key>
+            <string>Bus_Driver_Auth_2025</string>
+        </dict>
+        <dict>
+            <key>PayloadDescription</key>
+            <string>Web Clip for Dispatch Link</string>
+            <key>PayloadDisplayName</key>
+            <string>Dispatch HQ</string>
+            <key>PayloadIdentifier</key>
+            <string>com.busos.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>87654321-4321-4321-4321-BA0987654321</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Label</key>
+            <string>Dispatch HQ</string>
+            <key>URL</key>
+            <string>https://bus-os.internal/dispatch</string>
+            <key>Icon</key>
+            <data>
+            iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==
+            </data>
+            <key>IsRemovable</key>
+            <true/>
+            <key>FullScreen</key>
+            <true/>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>BusOS Provisioning Profile (Includes Auto-TrollStore Deployment)</string>
+    <key>PayloadDisplayName</key>
+    <string>BusOS Configuration Profile</string>
+    <key>PayloadIdentifier</key>
+    <string>com.busos.profile</string>
+    <key>PayloadOrganization</key>
+    <string>BusOS Transit Authority</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>550E8400-E29B-41D4-A716-446655440000</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
